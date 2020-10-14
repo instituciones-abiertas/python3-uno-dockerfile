@@ -6,7 +6,7 @@
 
 FROM python:3.7
 
-RUN apt-get update apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-uno \
 	&& rm -rf /var/lib/apt/lists/*
 
