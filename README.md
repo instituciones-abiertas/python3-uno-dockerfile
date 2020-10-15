@@ -27,5 +27,7 @@ $ docker run -it --rm --name my-running-app my-python-app
 
 ### Solo Ejecutando un scripts
 
-`$ docker build -t my-python-uno . `
-`$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp my-python-uno python tu_script.py`
+```
+$ docker build -t my-python-uno . 
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp my-python-uno python tu_script.py
+```
