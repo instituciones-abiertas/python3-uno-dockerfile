@@ -8,6 +8,8 @@ FROM python:3.7
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-uno \
+    libreoffice-writer \
+    default-jre \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN cp /usr/lib/python3/dist-packages/uno.py /usr/local/lib/python3.7/site-packages/
