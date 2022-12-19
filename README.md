@@ -67,8 +67,16 @@ docker run -it --rm --name my-running-app my-python-app
 
 ### Standalone
 
+Use pip version default (22.1.2)
 ```bash
 docker build -t my-python-uno . 
+```
+or set pip version
+```bash
+docker build -t my-python-uno --build-arg PIP_VERSION=valid_pip_version_in_python_3.8 .
+```
+After
+```bash
 docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp my-python-uno python tu_script.py
 ```
 
