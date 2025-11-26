@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM python:3.7
+FROM python:3.7-bullseye
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-uno \
